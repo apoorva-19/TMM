@@ -4,3 +4,12 @@ body
     margin-right: 20em;
     color: #eeeeee;
 }
+
+div#compare {
+    display: none;
+}
+
+div#main:hover div#compare
+{
+    display: block;
+}
