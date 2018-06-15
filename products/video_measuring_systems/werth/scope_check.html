@@ -23,6 +23,9 @@
             <li class="nav-item">
               <a class="nav-link" href="../../../index.html">HOME <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../about_us/index.html">ABOUT US</a>
+            </li>
             <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   PRODUCTS
@@ -126,10 +129,7 @@
                     <br/>
                     <div class="row">
                         <div class="offset-7 col-2">
-                            <button type="button" class="btn btn-primary" >Request Price</button>
-                        </div>
-                        <div class="offset-1 col-2">
-                            <button type="button" class="btn btn-primary">Request Demo</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#request">Request Demo and Price</button>
                         </div>
                     </div>
                 </div>
@@ -143,6 +143,71 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="request" tabindex="-1" role="dialog" aria-labelledby="requestTitle" aria-hidden="true" style="color: black;"> 
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reuestTitle">Price Request and Demo Request</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please fill in your details.</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="compName">Company Name</label>
+                                    <input type="text" class="form-control" id="compName" required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="mailId">Email address</label>
+                                    <input type="email" class="form-control" id="mailId" placeholder="name@example.com" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="contactName">Name of Contact Person</label>
+                                    <input type="text" class="form-control" id="contactName" required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="text" class="form-control" id="contactNumber" required>
+                                </div>
+                            </div>
+                        </div>
+                        <label>Request for</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="htGauge" onclick="display_ht()">
+                                    <label class="form-check-label" for="htGauge">Price</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="horizontal" onclick="display_hori()">
+                                    <label class="form-check-label" for="horizontal">Demo</label>
+                                </div> 
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+                </div>
+            </div>
+            </div> 
         </div>
+        <br>
 </body>
 </html>
