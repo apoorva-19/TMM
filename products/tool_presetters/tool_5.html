@@ -39,6 +39,8 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../lvdt_probes/index.html">LVDT Probes</a>
                         <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../non_contact_sensors/index.html">Non Contact Sensors</a>
+                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../optical_measurement/index.html">Optical Measurement</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../projectors/index.html">Projectors</a>
@@ -91,53 +93,83 @@
                     <h5>Features</h5>
                     <h4>ONLY ON REQUEST</h4>
                     <br/>
-                    <h5>Specifications</h5>
-                    <div class="table-responsive">
-                        <table class="table table-sm table-bordered table-striped">
-                            <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
                     <br/>
                     <div class="row">
                         <div class="offset-7 col-2">
-                            <button type="button" class="btn btn-primary" >Request Price</button>
-                        </div>
-                        <div class="offset-1 col-2">
-                            <button type="button" class="btn btn-primary">Request Demo</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#request">Request Demo and Price</button>
                         </div>
                     </div>
                 </div>
                 <div class="offset-1 col-4">
                     <img src="../../img/tool_presetters/tool_5_lg.png" alt="Tool Master 5" style="border: 4px solid whitesmoke ">
                     <br/>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="offset-3 col-4 "><button type="button" class="btn btn-warning" >Download Catalogue</button></div>
-                    </div>
                 </div>
             </div>
+            <div class="modal fade" id="request" tabindex="-1" role="dialog" aria-labelledby="requestTitle" aria-hidden="true" style="color: black;"> 
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reuestTitle">Price Request and Demo Request</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please fill in your details.</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="compName">Company Name</label>
+                                    <input type="text" class="form-control" id="compName" required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="mailId">Email address</label>
+                                    <input type="email" class="form-control" id="mailId" placeholder="name@example.com" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="contactName">Name of Contact Person</label>
+                                    <input type="text" class="form-control" id="contactName" required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="text" class="form-control" id="contactNumber" required>
+                                </div>
+                            </div>
+                        </div>
+                        <label>Request for</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="htGauge" onclick="display_ht()">
+                                    <label class="form-check-label" for="htGauge">Price</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="horizontal" onclick="display_hori()">
+                                    <label class="form-check-label" for="horizontal">Demo</label>
+                                </div> 
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+                </div>
+            </div>
+            </div> 
         </div>
+        <br>
 </body>
 </html>

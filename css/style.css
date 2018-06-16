@@ -26,3 +26,9 @@ html:first-child img
     margin-bottom: 1rem; 
     margin-top: 1rem;
 }
+
+#download
+{
+    text-decoration: none;
+    color: black;
+}
