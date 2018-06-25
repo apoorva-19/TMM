@@ -3,11 +3,9 @@ html{
 }
 @media only screen and (min-width: 1200px) {
     body {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-left: 15%;
-        margin-right: 15%;
-        color: #eeeeee; 
+            margin-left: 15%;
+            margin-right: 15%;
+            color: #eeeeee; 
     }
 }
 
@@ -23,8 +21,8 @@ div#main:hover div#compare
 
 html:first-child img
 {
-    margin-bottom: 1rem; 
-    margin-top: 1rem;
+    margin-bottom: 1%; 
+    margin-top: 1%;
 }
 
 #download
