@@ -225,6 +225,7 @@
 			$this->Rect(10,$y,190,30);
 			$y = $this->GetY();
 			$this->Cell(50,6,"GST No. 27AABPI3117P1ZN", 0,1,'L');
+			$this->Cell(50,6,"TAN No. PNEN10155F",0,1,'L');
 			$this->SetY($y);
 			$this->SetX(160);
 			$this->Cell(60,6,"For Trimaster Metrology",0,1,'L');
